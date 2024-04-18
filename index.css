@@ -1,0 +1,332 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+   
+    font-family: Arial, sans-serif;
+  }
+  
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      color: white;
+    }
+   
+    .navbar-left img {
+      justify-content: flex-start;
+      max-height: 100%;
+      max-width: 100%;
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+      float: left;
+      /* margin-right: 100px; */
+    }
+   
+    .navbar-right {
+      gap: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      height: 30px;
+      padding-right: 30px;
+    }
+   
+    .navbar-center {
+      display: flex;
+      width: 50%;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+    }
+   
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      margin: 0 20px;
+      font-size: 16px;
+    }
+   
+    .section {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+   
+    .section img {
+      min-width: 120vh;
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+   
+    .section .text {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      padding: 0px 100px;
+      background-color: #303030;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+   
+    .article {
+      background-color: #b2b2b2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+   
+    .article-content {
+      width: calc(33.33% - 20px);
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+   
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #dad6df;
+      padding: 20px;
+    }
+   
+    .header-footer {
+      text-align: start;
+      width: 87%;
+    }
+   
+    .footer-item-container {
+      display: flex;
+      width: 87%;
+    }
+  
+    .footer-item img{
+      padding: 10px 20px; 
+    }
+    
+   
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px;
+    }
+   
+    .footer-item img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+   
+    .footer-item dl {
+      margin: 0;
+      padding: 0;
+      text-align: start;
+    }
+   
+    .footer-item dl dt {
+      font-weight: bold;
+    }
+   
+    .footer-item button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+   
+    .header-footer button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+   
+    .header-footer h1 {
+      text-align: start;
+      margin: 20px;
+    }
+   
+    .button:hover {
+      transform: scale(1.1);
+    }
+   
+    .navbar-center a:hover {
+      transform: scale(1.1);
+    }
+  
+   @media screen and (max-width: 750px) {
+      .navbar {
+        font-size: 14px;
+      }
+      .section img {
+        min-width: 120vh;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    }
+   
+    @media screen and (max-width: 768px) {
+      .navbar a {
+        font-size: 14px;
+      }
+  
+      .article {
+        background-color: #b2b2b2;
+        display: flex;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+    }
+  
+    .header-footer h1 {
+      text-align: center;
+      margin: 20px;
+  }
+   
+    .footer-item-container {
+      display: flex;
+      width: 87%;
+      display: flex;
+      align-content: space-around;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  
+  .header-footer h{
+    text-align: center;
+  }
+  
+      .section {
+        height: 200px;
+      }
+   
+      .section button {
+        bottom: 10px;
+        left: 10px;
+      }
+   
+      .article-content {
+        width: calc(50% - 20px);
+      }
+   
+      .footer-item {
+        width: calc(50% - 40px);
+      }
+    }
+   
+    @media screen and (max-width: 480px) {
+  
+      .body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        min-width: 100vh;
+        height: 100%;
+        min-height: 100vh;
+        max-height: auto;
+        overflow-x: hidden;
+        position: absolute;
+       
+        font-family: Arial, sans-serif;
+      }
+      the issue is that during responsive there 
+      .navbar {
+        height: 60px;
+        width: 99.6%;
+      }
+   
+      .navbar-left img {
+        width: 50px;
+      }
+   
+      .navbar-center a {
+        font-size: 10px;
+        margin-left: 20px;
+      }
+   
+      .navbar-right {
+        width: 10px !important;
+      }
+   
+      .navbar a {
+        margin: 0 10px;
+      }
+   
+      .section button {
+        padding: 5px 10px;
+        bottom: 5px;
+        left: 5px;
+      }
+   
+      .article-content {
+        width: calc(100% - 20px);
+      }
+   
+      .footer-item {
+        width: calc(100% - 40px);
+      }
+    }
+  
+   
+  @media screen and(max-width:1080px) {
+    .body {
+      margin: 0px;
+      padding: 0px;
+    }
+    element.style {
+      margin-left: auto;
+      padding: 5px 30px;
+      margin-top: 62px;
+  }
+  
+  } 
+  
+  @media screen and (min-width:0px) and (max-width:191px) {
+    .body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      min-width: 100vh;
+      height: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      font-family: Arial, sans-serif;
+    }
+  
+  
+    @media screen and (max-width:2500px){
+      element.style {
+        margin-left: auto;
+        padding: 5px 30px;
+        margin-top: 40px;
+    }
+    }
+  }
+  
+   
